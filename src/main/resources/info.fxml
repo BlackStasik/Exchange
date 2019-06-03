@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0000999999975" prefWidth="532.0000999999975" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <ScrollPane layoutX="1.0" layoutY="-1.0" prefHeight="616.0001220703125" prefWidth="531.0001220703125">
+      <content>
+        <VBox alignment="TOP_CENTER" prefHeight="758.0" prefWidth="517.0" style="-fx-background-color: #696969">
+          <children>
+            <TextArea minHeight="60.0" prefHeight="200.0" prefWidth="533.0" style="-fx-background-color: #696969" text="Програма ExMod - це програма, за допомогою якої моделюється криптовалютна біржа Blackcoin. Користувач може спостерігати за процесами, що відбуваються на біржі, а також стати одним з учасників біржі." wrapText="true" />
+            <ImageView fitHeight="278.96590862189595" fitWidth="391.4419250488281" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="sc_1.png" backgroundLoading="false" />
+              </image>
+            </ImageView>
+            <TextArea minHeight="30.0" prefHeight="70.0" prefWidth="533.0" style="-fx-background-color: #696969" text="Капітал користувачів показує, скільки Blackcoin є у кожного користувача." wrapText="true" />
+            <ImageView fitHeight="205.87867729521088" fitWidth="504.676025390625" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="sc_2.png" backgroundLoading="false" />
+              </image>
+            </ImageView>
+            <TextArea minHeight="50.0" prefHeight="70.0" prefWidth="533.0" style="-fx-background-color: #696969" text="Дії користувачів показують, що зробить користувач на наступному кроці." wrapText="true" />
+            <ImageView fitHeight="324.29021864584337" fitWidth="336.527587890625" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="sc_3.png" backgroundLoading="false" />
+              </image>
+            </ImageView>
+            <TextArea minHeight="50.0" prefHeight="70.0" prefWidth="533.0" style="-fx-background-color: #696969" text="На кожному кроці показується зміна курсу Blackcoin залежно від дій користувачів." wrapText="true" />
+            <ImageView fitHeight="324.29021864584337" fitWidth="336.527587890625" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="sc_4.png" backgroundLoading="false" />
+              </image>
+            </ImageView>
+            <TextArea minHeight="50.0" prefHeight="70.0" prefWidth="533.0" style="-fx-background-color: #696969" text="Курс Blackcoin вираховується залежно від відношення вільного і занятого капіталу." wrapText="true" />
+            <ImageView fitHeight="324.29021864584337" fitWidth="336.527587890625" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="sc_5.png" backgroundLoading="false" />
+              </image>
+            </ImageView>
+            <TextArea minHeight="50.0" prefHeight="70.0" prefWidth="533.0" style="-fx-background-color: #696969" text="У ролі учасника біржі, Ви можете купляти та продавати Blackcoins, залежно від об'єму Вашого капіталу." wrapText="true" />
+            <ImageView fitHeight="205.87867729521088" fitWidth="504.676025390625" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="sc_6.png" backgroundLoading="false" />
+              </image>
+            </ImageView>
+            <TextArea minHeight="50.0" prefHeight="70.0" prefWidth="533.0" text="У ролі учасника біржі, Ви не можете бачити дії Ваших конкурентів до їх виконання, Ви ведете торги аналізуючи курс та перспективи." wrapText="true" />
+            <ImageView fitHeight="205.87867729521088" fitWidth="504.676025390625" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="sc_7.png" backgroundLoading="false" />
+              </image>
+            </ImageView>
+          </children>
+        </VBox>
+      </content>
+    </ScrollPane>
+  </children>
+</AnchorPane>

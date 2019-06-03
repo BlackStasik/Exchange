@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style=" -fx-background-color: #1d1d19" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="MainController">
+  <children>
+    <Pane layoutX="0.0" layoutY="200.0" prefHeight="200.0" prefWidth="600.0" style=" -fx-background-color: #1d1d19">
+      <children>
+        <TextArea blendMode="BLUE" layoutX="123.0" layoutY="13.0" prefHeight="48.0" prefWidth="355.0" text="Ці функції дозволяють користувачу побачити, як процює біржа криптовалют та стати учасником цієї біржі" wrapText="true" />
+        <Button blendMode="HARD_LIGHT" layoutX="242.0" layoutY="118.0" mnemonicParsing="false" onAction="#modelInv" prefWidth="117.0" style=" -fx-background-color: black" text="Інвестор">
+          <font>
+            <Font name="Times New Roman Bold" size="15.0" fx:id="x1" />
+          </font>
+          <textFill>
+            <Color blue="1.000" green="0.200" red="0.647" fx:id="x2" />
+          </textFill>
+        </Button>
+        <Button blendMode="HARD_LIGHT" font="$x1" layoutX="123.0" layoutY="80.0" mnemonicParsing="false" onAction="#modelTreid" prefWidth="117.0" style=" -fx-background-color: black" text="Трейдер" textFill="$x2" />
+        <Button blendMode="HARD_LIGHT" font="$x1" layoutX="361.0" layoutY="80.0" mnemonicParsing="false" onAction="#mUser" prefWidth="117.0" style=" -fx-background-color: black" text="Користувач" textFill="$x2" />
+        <ImageView fitHeight="37.5" fitWidth="50.0" layoutX="536.0" layoutY="149.0" onMouseClicked="#help" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="icon_.png" />
+          </image>
+        </ImageView>
+      </children>
+    </Pane>
+    <Label alignment="CENTER" blendMode="HARD_LIGHT" layoutX="114.0" layoutY="31.0" prefHeight="28.0" prefWidth="374.0" text="Модель біржі криптовалюти Blackcoin" textFill="#fff733">
+      <font>
+        <Font name="Times New Roman Bold" size="20.0" />
+      </font>
+    </Label>
+    <TextArea blendMode="BLUE" layoutX="123.0" layoutY="72.0" prefHeight="48.0" prefWidth="355.0" style="" text="Подивитись модель - функція, що дозволяє користувачу побачити, як процює біржа криптовалют." wrapText="true" />
+    <Button blendMode="HARD_LIGHT" font="$x1" layoutX="214.0" layoutY="150.0" mnemonicParsing="false" onAction="#model" style=" -fx-background-color: black" text="Подивитись модель" textFill="#a533ff" />
+  </children>
+</AnchorPane>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="825.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="InvestController">
+  <children>
+    <Pane layoutX="604.0" layoutY="351.0" prefHeight="273.0" prefWidth="221.0" style="-fx-background-color: #808080" />
+    <BarChart fx:id="bar" blendMode="DIFFERENCE" layoutX="0.0" layoutY="0.0" prefHeight="351.0" prefWidth="825.0" style="-fx-background-color: #808080" title="Капітал користувачів">
+      <xAxis>
+        <CategoryAxis id="xAxis" label="Ім'я користувача" side="BOTTOM" />
+      </xAxis>
+      <yAxis>
+        <NumberAxis id="yAxis" label="Blackcoin" prefHeight="235.0" side="LEFT" />
+      </yAxis>
+    </BarChart>
+    <LineChart fx:id="kncoin" blendMode="DIFFERENCE" layoutX="0.0" layoutY="351.0" prefHeight="273.0" prefWidth="394.0" style="-fx-background-color: #808080" title="Blackcoin курс">
+      <xAxis>
+        <CategoryAxis label="Кроки" side="BOTTOM" />
+      </xAxis>
+      <yAxis>
+        <NumberAxis label="Ціна грн." prefHeight="163.0" prefWidth="33.0001220703125" side="LEFT" />
+      </yAxis>
+    </LineChart>
+    <Button fx:id="next" blendMode="HARD_LIGHT" layoutX="615.0" layoutY="534.0" mnemonicParsing="false" onAction="#next" prefHeight="41.0" prefWidth="160.0" style="-fx-background-color: black" text="Далі" textFill="#0029ff">
+      <font>
+        <Font name="Times New Roman Bold" size="16.0" />
+      </font>
+    </Button>
+    <Label blendMode="HARD_LIGHT" layoutX="613.0" layoutY="418.0" prefHeight="24.0" prefWidth="127.0" text="Капітал:" textFill="BLACK">
+      <font>
+        <Font name="Times New Roman Bold" size="15.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="613.0" layoutY="437.0" prefHeight="23.999900000002526" prefWidth="127.0" text="Вільний капітал:" textFill="BLACK" />
+    <Label font="$x1" layoutX="614.0" layoutY="455.0" prefHeight="24.0" prefWidth="127.0" text="Занятий капітал:" textFill="BLACK" />
+    <Label font="$x1" layoutX="615.0" layoutY="471.0" prefHeight="24.0" prefWidth="127.00009999999747" text="Курс:" textFill="BLACK" />
+    <Label fx:id="cap" font="$x1" layoutX="734.0" layoutY="418.0" prefHeight="24.0" prefWidth="71.0" text="___" textFill="BLACK" />
+    <Label fx:id="fr" font="$x1" layoutX="736.0" layoutY="437.0" prefHeight="24.0" prefWidth="71.0" text="___" textFill="BLACK" />
+    <Label fx:id="us" font="$x1" layoutX="736.0" layoutY="454.0" prefHeight="24.0" prefWidth="71.0" text="___" textFill="BLACK" />
+    <Label fx:id="rate" font="$x1" layoutX="738.0" layoutY="470.0" prefHeight="24.0" prefWidth="71.0" text="___" textFill="BLACK" />
+    <Pane layoutX="394.0" layoutY="351.0" prefHeight="273.0" prefWidth="210.0" style="-fx-background-color: #808080">
+      <children>
+        <TextField fx:id="buy" layoutX="5.0" layoutY="201.0" prefWidth="200.0" promptText="100" text="0" />
+      </children>
+    </Pane>
+    <Label blendMode="HARD_LIGHT" font="$x1" layoutX="404.0" layoutY="412.0" prefHeight="24.0" prefWidth="127.0" text="Ваш капітал:" textFill="BLACK" />
+    <Label fx:id="uCap" font="$x1" layoutX="507.0" layoutY="412.0" prefHeight="24.0" prefWidth="84.0" text="___" textFill="BLACK" />
+    <Label blendMode="HARD_LIGHT" font="$x1" layoutX="404.0" layoutY="488.0" prefHeight="24.0" prefWidth="127.0" text="Ваш крок?" textFill="BLACK" />
+    <Label blendMode="HARD_LIGHT" layoutX="404.0" layoutY="503.0" prefHeight="26.0" prefWidth="201.0" text="Введіть додатнє число, щоб купити, " textFill="BLACK">
+      <font>
+        <Font name="Times New Roman Bold" size="10.0" fx:id="x2" />
+      </font>
+    </Label>
+    <Label blendMode="HARD_LIGHT" font="$x2" layoutX="405.0" layoutY="516.0" prefHeight="26.0" prefWidth="201.0" text="і від'ємне число, щоб продати Blackcoin." textFill="BLACK" />
+    <Label blendMode="HARD_LIGHT" font="$x2" layoutX="405.0" layoutY="528.0" prefHeight="26.0" prefWidth="201.0" text="Не можна продати більше свого капіталу." textFill="BLACK" />
+    <Label blendMode="HARD_LIGHT" font="$x1" layoutX="403.0" layoutY="389.0" prefHeight="24.0" prefWidth="127.0" text="Ви інвестор." textFill="BLACK" />
+  </children>
+</AnchorPane>
